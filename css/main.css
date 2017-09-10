@@ -1,0 +1,94 @@
+html body {
+  overflow: auto;
+  height: 100%;
+  background: #fff; }
+
+html a {
+  color: #3D7454; }
+
+html a:hover {
+  text-decoration: none; }
+
+a.link_home #hanger_logo {
+  display: block;
+  width: 10%;
+  max-width: 100px;
+  min-width: 80px;
+  margin: 25px auto 0 auto; }
+
+a.link_home h2 {
+  margin: 10px auto;
+  font-family: "Khula", sans-serif;
+  text-align: center;
+  color: #B0CC9C;
+  letter-spacing: .05em;
+  font-size: 1.5em; }
+
+nav#navbarNavDropdown.collapse.navbar-collapse {
+  height: 60px;
+  width: 100%;
+  font-size: 1.3em;
+  padding-left: 0; }
+  nav#navbarNavDropdown.collapse.navbar-collapse ul.nav.navbar-nav {
+    display: block;
+    margin: 0 auto; }
+    nav#navbarNavDropdown.collapse.navbar-collapse ul.nav.navbar-nav li a {
+      font-family: "Khula", sans-serif; }
+
+.nav li a:hover,
+.nav li a:focus {
+  background-color: transparent;
+  color: #B0CC9C; }
+
+.navbar-toggler {
+  position: absolute;
+  right: 40px;
+  top: 40px; }
+
+.container-fluid {
+  display: block;
+  padding: 0;
+  height: 300px;
+  width: 100%;
+  margin: 0 auto; }
+  .container-fluid .row {
+    height: 100%;
+    width: 100%;
+    margin: 15px auto; }
+    .container-fluid .row .col {
+      height: 100%;
+      padding: 0; }
+      .container-fluid .row .col .hero_divs {
+        padding: 110px;
+        height: 100%;
+        width: 98%;
+        margin: 0 auto;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover; }
+        .container-fluid .row .col .hero_divs h1 {
+          margin: 0;
+          text-align: center;
+          font-family: "Khula", sans-serif;
+          font-size: 2em;
+          color: #3D7454;
+          letter-spacing: .05em; }
+        .container-fluid .row .col .hero_divs p {
+          font-size: 1.2em;
+          font-family: "Droid Serif", serif;
+          color: #3D7454;
+          letter-spacing: .05em;
+          line-height: 1.7em; }
+      .container-fluid .row .col .green1 {
+        background-image: linear-gradient(rgba(61, 116, 84, 0.5), rgba(61, 116, 84, 0.5)), url(../assets/images/stock_shirts.jpg); }
+      .container-fluid .row .col .green2 {
+        background-image: linear-gradient(rgba(61, 116, 84, 0.5), rgba(61, 116, 84, 0.5)), url(../assets/images/stock_full_outfit.jpg);
+        background-position: top; }
+
+@media (min-width: 768px) {
+  .navbar-toggler {
+    display: none; }
+  a.link_home h2 {
+    font-size: 2em; }
+  .container-fluid .row .col .hero_images h1 {
+    text-align: left; } }

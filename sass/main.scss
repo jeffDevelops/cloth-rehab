@@ -1,0 +1,139 @@
+$green: #3D7454;
+$ltGreen: #B0CC9C;
+$yellow: #F3E88C;
+
+$title-font: 'Khula', sans-serif;
+$body-font: 'Droid Serif', serif;
+
+//Green Overlay
+//rgba(61, 116, 84, .6);
+
+html {
+	body {
+		overflow: auto;
+		height: 100%;
+		background: #fff;
+	}
+	a {
+		color: $green;
+	}
+	a:hover {
+		text-decoration: none;
+	}
+}
+
+a.link_home {
+	#hanger_logo {
+		display: block;
+		width: 10%;
+		max-width: 100px;
+		min-width: 80px;
+		margin: 25px auto 0 auto;
+	}
+	h2 {
+		margin: 10px auto;
+		font-family: $title-font;
+		text-align: center;
+		color: $ltGreen;
+		letter-spacing: .05em;
+		font-size: 1.5em;
+	}
+}
+
+nav#navbarNavDropdown.collapse.navbar-collapse {
+	height: 60px;
+	width: 100%;
+	font-size: 1.3em;
+	padding-left: 0;
+	ul.nav.navbar-nav {
+		display: block;
+		margin: 0 auto;
+		li {
+			a {
+				font-family: $title-font;
+			}
+		}
+	}
+}
+
+.nav li a:hover,
+.nav li a:focus {
+		background-color: transparent;
+		color: $ltGreen;
+	}
+
+.navbar-toggler {
+	position: absolute;
+	right: 40px;
+	top: 40px;
+}
+
+.container-fluid {
+	display: block;
+	padding: 0;
+	height: 300px;
+	width: 100%;
+	margin: 0 auto;
+	.row {
+		height: 100%;
+		width: 100%;
+		margin: 15px auto;
+		.col {
+			height: 100%;
+			padding: 0;
+			.hero_divs {
+				padding: 110px;
+				height: 100%;
+				width: 98%;
+				margin: 0 auto;
+				background-repeat: no-repeat;
+				background-position: center;
+				background-size:  cover;
+				h1 {
+					margin: 0;
+					text-align: center;
+					font-family: $title-font;
+					font-size: 2em;
+					color: $green;
+					letter-spacing: .05em;
+				}
+				p {
+					font-size: 1.2em;
+					font-family: $body-font;
+					color: $green;
+					letter-spacing: .05em;
+					line-height: 1.7em;
+				}
+			}
+			.green1 { 
+				background-image: linear-gradient(rgba(61, 116, 84, .5), rgba(61, 116, 84, .5)), url(../assets/images/stock_shirts.jpg);
+			}
+			.green2 {
+				background-image: linear-gradient(rgba(61, 116, 84, .5), rgba(61, 116, 84, .5)), url(../assets/images/stock_full_outfit.jpg);
+				background-position: top;
+			}
+		}
+	}
+}
+
+@media(min-width: 768px) {
+	.navbar-toggler {
+		display: none;
+	}
+	a.link_home {
+		h2 {
+			font-size: 2em;
+		}
+	}
+	.container-fluid {
+		.row {
+			.col {
+				.hero_images {
+					h1 {
+						text-align: left;
+					}
+				}
+			}
+		}
+	}
+}
